@@ -1,0 +1,37 @@
+﻿@model Assignment5.Models.ViewModels.Track.TrackBaseViewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details for @Model.Name</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+            <hr />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ClipUrl)
+        </dt>
+        <dd>
+            <audio src="/clip/@Model.Id" controls="controls"></audio>
+            <hr />
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Composers)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Composers)
+            <hr />
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>
