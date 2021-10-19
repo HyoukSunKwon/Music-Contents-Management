@@ -1,2 +1,2 @@
 # Music-Contents-Management
-![MusitStore](musicstore.gif)
+![MusicStore](MusicStore.gif)
